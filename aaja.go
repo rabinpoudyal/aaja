@@ -186,6 +186,6 @@ func convert_bs_to_ad(date_in_bs samwat) time.Time {
 
 func main(){
 	currentTime := time.Now()
-    nepali_date := convert_ad_to_bs(time.Date(currentTime.Year(), currentTime.Month(), 8, 0, 0, 0, 0, time.UTC))
+    nepali_date := convert_ad_to_bs(time.Date(currentTime.Year(), currentTime.Month(), currentTime.Day(), 0, 0, 0, 0, time.UTC))
     fmt.Println("🇳🇵 Aaja ", Magenta(nepali_date.year), " saal ", Green(nepali_date.month), " mahina ", Purple(nepali_date.day), " gatey")
 }
